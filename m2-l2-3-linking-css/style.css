@@ -1,3 +1,6 @@
+/* Import other css files */
+@import "./layout.css";
+
 .title {
     font-family: "Helvetica", "Arial", sans-serif;
     font-weight: bold;
