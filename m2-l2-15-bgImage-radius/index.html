@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn CSS</title>
+    <!-- Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/background-image -->
+    <style>
+        body {
+            font-size: 30px;
+            text-align: center;
+            color: whitesmoke;
+        }
+
+        .oval {
+            margin: 50px;
+            height: 25px;
+            width: 150px;
+            
+            /* border-radius */
+            border-radius: 85%;
+            padding: 85px;
+
+            /* background-image */
+            background-image: linear-gradient(rgba(0, 0, 255, 0.5),
+                rgba(255, 255, 0, 0.5)),
+                  url("https://images.pexels.com/photos/1759239/pexels-photo-1759239.jpeg");
+            background-size: cover;
+        }
+
+        .circle {
+            background-color: #ff006c;
+            margin: 50px;
+            height: 50px;
+            width: 50px;
+
+            /* border-radius */
+            border-radius: 100%;
+            padding: 150px;
+
+            /* background-image */
+            background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5));
+        }
+
+        .skyWithStars {
+            background-color: skyblue;
+            margin: 50px;
+            height: 25px;
+            width: 150px;
+
+            /* border-radius */
+            border-radius: 85%;
+            padding: 85px;
+
+            /* background-image */
+            background-image: url("./stars.png"), url("https://images.pexels.com/photos/3577348/pexels-photo-3577348.jpeg");
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="oval">Alphabet</div>
+    <div class="circle">World</div>
+    <div class="skyWithStars">Stars</div>
+</body>
+</html>
